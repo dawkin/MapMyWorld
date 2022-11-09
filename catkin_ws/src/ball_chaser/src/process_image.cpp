@@ -61,13 +61,13 @@ void process_image_callback(const sensor_msgs::Image img)
         drive_robot(0.0, 0.0); // This request brings my_robot to a complete stop
     }
     else if (direction == left_counter) {
-	drive_robot(0.0, -0.5);  // This request should drive my_robot left
+	drive_robot(0.0, 0.5);  // This request should drive my_robot left
     }
     else if (direction == front_counter) {
         drive_robot(0.5, 0.0);  // This request drives my_robot robot forward
     }
     else if (direction == right_counter) {
-        drive_robot(0.0, 0.5); // This request drives my_robot right
+        drive_robot(0.0, -0.5); // This request drives my_robot right
     }
 }
 
