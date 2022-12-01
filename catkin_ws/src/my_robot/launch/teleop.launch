@@ -3,7 +3,11 @@
 
   <!-- linear and angular speed -->
   <arg name="linear" default="_speed:=0.7"/>
+<<<<<<< Updated upstream
   <arg name="angular" default="_turn:=2.1"/>
+=======
+  <arg name="angular" default="_turn:=1.8"/>
+>>>>>>> Stashed changes
 
   <node name="teleop" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" output="screen" args="$(arg linear) $(arg angular)"/>
 
